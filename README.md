@@ -7,14 +7,19 @@ InsightProfile is a full-stack personality analysis application that integrates 
 - **LinkedIn Profile Analysis**: Input a LinkedIn profile URL to analyze personality
 - **Humantic AI Integration**: Retrieves behavioral data using Humantic AI API
 - **AI-Powered Insights**: Uses Google Gemini to analyze and generate personality summaries
+- **PostgreSQL Caching**: Smart caching system reduces API calls and improves response times
 - **Visual Dashboard**: Interactive radar chart showing Big Five personality traits
 - **Strengths & Weaknesses**: Highlights 3 key strengths and 3 areas for growth
 - **Professional UI**: Modern, responsive design with Tailwind CSS
+- **Data Persistence**: Historical analysis data stored in PostgreSQL database
 
 ## Technology Stack
 
 ### Backend
 - **FastAPI**: Modern Python web framework
+- **PostgreSQL**: Database for caching and data persistence
+- **SQLAlchemy**: ORM for database operations
+- **Alembic**: Database migration tool
 - **LangChain**: AI orchestration framework
 - **Google Gemini**: AI model for personality analysis
 - **Humantic AI API**: Behavioral data extraction
@@ -33,6 +38,7 @@ InsightProfile is a full-stack personality analysis application that integrates 
 - Python 3.8 or higher
 - Node.js 16 or higher
 - npm or yarn package manager
+- **PostgreSQL 15** (or Docker for easy setup)
 - Humantic AI API key ([Get one here](https://api.humantic.ai/))
 - Google API key for Gemini ([Get one here](https://makersuite.google.com/app/apikey))
 
@@ -42,9 +48,17 @@ InsightProfile is a full-stack personality analysis application that integrates 
 Project1/
 ├── backend/
 │   ├── main.py              # FastAPI application
+│   ├── database.py          # Database configuration
+│   ├── models.py            # SQLAlchemy models
+│   ├── crud.py              # Database operations
+│   ├── alembic/             # Database migrations
 │   ├── requirements.txt     # Python dependencies
 │   ├── .env.example         # Environment variables template
-│   └── setup_env.bat        # Windows setup script
+│   ├── setup_env.bat        # Windows setup script
+│   └── setup_database.bat   # Database setup script
+├── docker-compose.yml       # PostgreSQL Docker setup
+├── POSTGRES_SETUP.md        # Database setup guide
+├── TESTING_DATABASE.md      # Database testing guide
 ├── frontend/
 │   ├── src/
 │   │   ├── App.jsx          # Main React component
@@ -67,17 +81,31 @@ Project1/
 
 ### Backend Setup
 
-1. **Navigate to the backend directory:**
+1. **Set up PostgreSQL:**
+   
+   See `POSTGRES_SETUP.md` for detailed instructions. Quick options:
+   
+   **Option A: Docker (Recommended)**
+   ```bash
+   docker compose up -d
+   ```
+   
+   **Option B: Manual PostgreSQL Installation**
+   - Download from [postgresql.org](https://www.postgresql.org/download/)
+   - Create database: `insightprofile`
+   - Default credentials: `postgres/postgres`
+
+2. **Navigate to the backend directory:**
    ```bash
    cd backend
    ```
 
-2. **Create a virtual environment (if not using the setup script):**
+3. **Create a virtual environment (if not using the setup script):**
    ```bash
    python -m venv venv
    ```
 
-3. **Activate the virtual environment:**
+4. **Activate the virtual environment:**
    - Windows:
      ```bash
      venv\Scripts\activate
@@ -87,7 +115,7 @@ Project1/
      source venv/bin/activate
      ```
 
-4. **Install dependencies:**
+5. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
@@ -97,18 +125,30 @@ Project1/
    setup_env.bat
    ```
 
-5. **Create a `.env` file:**
+6. **Create a `.env` file:**
    ```bash
    copy .env.example .env
    ```
 
-6. **Edit `.env` file and add your API keys:**
+7. **Edit `.env` file and add your API keys:**
    ```
    HUMANTIC_API_KEY=your_humantic_api_key_here
    GOOGLE_API_KEY=your_google_api_key_here
+   DATABASE_URL=postgresql://postgres:postgres@localhost:5432/insightprofile
+   CACHE_EXPIRY_DAYS=30
    ```
 
-7. **Start the backend server:**
+8. **Run database migrations:**
+   ```bash
+   alembic upgrade head
+   ```
+   
+   **OR use the setup script (Windows):**
+   ```bash
+   setup_database.bat
+   ```
+
+9. **Start the backend server:**
    ```bash
    uvicorn main:app --reload
    ```
@@ -150,11 +190,29 @@ Project1/
    - **Strengths**: 3 key strengths identified
    - **Areas for Growth**: 3 areas for improvement
 
+## Database Caching
+
+InsightProfile uses PostgreSQL to cache API responses, providing significant performance improvements:
+
+### Benefits
+- **35-40x faster**: Cached requests return in <1 second vs 35-40 seconds
+- **Reduced API costs**: Minimize calls to Humantic AI and Gemini
+- **Data persistence**: Historical analysis data is preserved
+- **Configurable expiry**: Cache expires after 30 days (configurable)
+
+### Cache Behavior
+1. **First Request**: Profile is fetched from APIs (~35-40 seconds) and cached
+2. **Subsequent Requests**: Data is returned from cache instantly (<1 second)
+3. **Expired Profiles**: Automatically refreshed after 30 days
+4. **Force Refresh**: Use `?force_refresh=true` to bypass cache
+
+See `TESTING_DATABASE.md` for comprehensive testing guide.
+
 ## API Endpoints
 
 ### POST `/api/analyze`
 
-Analyzes a LinkedIn profile and returns personality insights.
+Analyzes a LinkedIn profile and returns personality insights with caching support.
 
 **Request Body:**
 ```json
@@ -163,7 +221,10 @@ Analyzes a LinkedIn profile and returns personality insights.
 }
 ```
 
-**Response:**
+**Query Parameters:**
+- `force_refresh` (optional): Set to `true` to bypass cache and fetch fresh data
+
+**Response (Cache Miss):**
 ```json
 {
   "analysis": {
@@ -177,18 +238,71 @@ Analyzes a LinkedIn profile and returns personality insights.
     "extraversion": 82.1,
     "agreeableness": 71.3,
     "neuroticism": 45.8
-  }
+  },
+  "cached": false
+}
+```
+
+**Response (Cache Hit):**
+```json
+{
+  "analysis": {
+    "summary": "Personality summary text...",
+    "strengths": ["Strength 1", "Strength 2", "Strength 3"],
+    "weaknesses": ["Weakness 1", "Weakness 2", "Weakness 3"]
+  },
+  "raw_scores": {
+    "openness": 75.5,
+    "conscientiousness": 68.2,
+    "extraversion": 82.1,
+    "agreeableness": 71.3,
+    "neuroticism": 45.8
+  },
+  "cached": true,
+  "cached_at": "2026-01-29T12:34:56.789"
 }
 ```
 
 ### GET `/health`
 
-Health check endpoint.
+Health check endpoint with database status.
+
+**Response (Healthy):**
+```json
+{
+  "status": "healthy",
+  "database": "connected",
+  "stats": {
+    "total_profiles": 10,
+    "total_analyses": 10,
+    "recent_profiles_7_days": 3,
+    "timestamp": "2026-01-29T12:34:56.789"
+  }
+}
+```
+
+**Response (Degraded):**
+```json
+{
+  "status": "degraded",
+  "database": "disconnected",
+  "error": "connection error details"
+}
+```
+
+### DELETE `/api/cache/{linkedin_url}`
+
+Clear cached data for a specific LinkedIn profile.
+
+**Example:**
+```bash
+curl -X DELETE "http://localhost:8000/api/cache/https://www.linkedin.com/in/username"
+```
 
 **Response:**
 ```json
 {
-  "status": "healthy"
+  "message": "Cache cleared for https://www.linkedin.com/in/username"
 }
 ```
 
@@ -201,6 +315,15 @@ Health check endpoint.
 
 **Issue: API key errors**
 - Solution: Verify `.env` file exists and contains valid API keys
+
+**Issue: Database connection errors**
+- Solution: Ensure PostgreSQL is running and `DATABASE_URL` in `.env` is correct
+- Check: `docker compose ps` (if using Docker) or PostgreSQL service status
+- See: `POSTGRES_SETUP.md` for setup instructions
+
+**Issue: "Table does not exist" errors**
+- Solution: Run database migrations: `alembic upgrade head`
+- Or use: `setup_database.bat` (Windows)
 
 **Issue: CORS errors**
 - Solution: Ensure backend is running on port 8000 and frontend on port 3000
@@ -270,12 +393,14 @@ The backend can be deployed as-is. Consider using a production ASGI server like 
 
 ## Environment Variables
 
-Required environment variables:
+Required environment variables in `backend/.env`:
 
-| Variable | Description | Where to Get It |
-|----------|-------------|----------------|
-| `HUMANTIC_API_KEY` | Your Humantic AI API key | [api.humantic.ai](https://api.humantic.ai/) |
-| `GOOGLE_API_KEY` | Your Google API key for Gemini | [makersuite.google.com](https://makersuite.google.com/app/apikey) |
+| Variable | Description | Default | Where to Get It |
+|----------|-------------|---------|----------------|
+| `HUMANTIC_API_KEY` | Your Humantic AI API key | - | [api.humantic.ai](https://api.humantic.ai/) |
+| `GOOGLE_API_KEY` | Your Google API key for Gemini | - | [makersuite.google.com](https://makersuite.google.com/app/apikey) |
+| `DATABASE_URL` | PostgreSQL connection string | `postgresql://postgres:postgres@localhost:5432/insightprofile` | Local PostgreSQL setup |
+| `CACHE_EXPIRY_DAYS` | Days before cache expires | `30` | Configurable |
 
 ## License
 

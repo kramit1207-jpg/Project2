@@ -1,0 +1,550 @@
+{
+    "first_name": "Momshad",
+    "last_name": "Khan",
+    "display_name": "Momshad Khan",
+    "user_profile_image": "https://humantic-users-profile-picture.s3.amazonaws.com/linkedin_dda1f128e8a0c35d6b44.png",
+    "user_name": "https://www.linkedin.com/in/momshadkhan",
+    "user_id": "https://www.linkedin.com/in/momshadkhan",
+    "user_description": "Global Engineering Leader | Product Engineering | AI , Data , Cloud | GCC Specialist | Driving Innovation | Digital Transformation Strategy",
+    "demographics": {
+        "age_range": {
+            "min_age": 45,
+            "max_age": 50
+        }
+    },
+    "languages": {},
+    "social_profiles": {
+        "linkedin": "https://www.linkedin.com/in/momshadkhan"
+    },
+    "photos": {},
+    "websites": [],
+    "location": "Hyderabad, Telangana, India",
+    "timezone": "Asia/Calcutta",
+    "education": [
+        {
+            "school": "Indian Institute of Technology, Kanpur",
+            "degree": "CTO Program ",
+            "display": null,
+            "start_date": "11-2024",
+            "end_date": "8-2025"
+        },
+        {
+            "school": "Udacity",
+            "degree": "AI For Business Leaders Executive nano degree program",
+            "display": null,
+            "start_date": "2020",
+            "end_date": "2020"
+        },
+        {
+            "school": "Indian School of Business",
+            "degree": "Digital and Social Media Marketing Strategies",
+            "display": null,
+            "start_date": "2015",
+            "end_date": "2015"
+        },
+        {
+            "school": "Indian Institute of Management, Calcutta",
+            "degree": "EPBA",
+            "display": null,
+            "start_date": "2009",
+            "end_date": "2010"
+        },
+        {
+            "school": "Magadh University",
+            "degree": "B.E.",
+            "display": null,
+            "start_date": "1995",
+            "end_date": "2000"
+        }
+    ],
+    "work_history": [
+        {
+            "organization": "Code and Theory",
+            "title": "Director Of Engineering",
+            "start_date": "3-2021",
+            "end_date": "8-2024"
+        },
+        {
+            "organization": "Monotype Solutions India",
+            "title": "Senior Engineering Manager",
+            "start_date": "4-2016",
+            "end_date": "10-2020"
+        },
+        {
+            "organization": "Times Internet",
+            "title": "Head Techgig.com : Product,Technology & Data",
+            "start_date": "4-2013",
+            "end_date": "1-2016"
+        },
+        {
+            "organization": "CDC Labs",
+            "title": "Co-Founder & CTO",
+            "start_date": "2-2011",
+            "end_date": "3-2013"
+        },
+        {
+            "organization": "Tech Mahindra",
+            "title": "Project Manager",
+            "start_date": "1-2007",
+            "end_date": "1-2011"
+        },
+        {
+            "organization": "FIS",
+            "title": "Technical Lead",
+            "start_date": "1-2006",
+            "end_date": "12-2006"
+        },
+        {
+            "organization": "Newgen Software",
+            "title": "Senior Software Engineer",
+            "start_date": "9-2004",
+            "end_date": "12-2005"
+        },
+        {
+            "organization": "Advent Infosoft (P) Ltd",
+            "title": "Software Engineer",
+            "start_date": "1-2001",
+            "end_date": "8-2004"
+        }
+    ],
+    "related_entities": {},
+    "tech_usage": {},
+    "interests": {
+        "influencers": [],
+        "interests_and_hobbies": {}
+    },
+    "social_interactions": {},
+    "social_activity": {
+        "linkedin": [
+            {
+                "post_text": "\ud83d\udd0d Is AEO the New SEO? AI Is Rewriting the Rules of Online Discovery\n\nSEO changed the web forever by making us write for algorithms. Now, AI is changing how people search \u2014 and Answer Engine Optimization (AEO) is emerging as the new frontier.\nYou've probably seen it already: \n- Google\u2019s AI Overviews (powered by Gemini) \n- ChatGPT\u2019s clickable links and search tools \n- Perplexity summarizing answers instead of listing links\n\ud83d\udea8 The shift?\n-SEO = Optimize for keywords\n-AEO = Optimize for answers\nDavid Slater (ex-Mozilla, Salesforce) noted ~30 AEO-focused product launches in recent months \u2014 all aiming to do what SEO did 20 years ago.\n\n\u2699\ufe0f What AEO-Optimized Content Looks Like:\n\u2705 Full-sentence, conversational answers\n \u2705 Structured data + cited sources\n \u2705 High-quality content that AI models can summarize, rank, and link to directly\n\n\ud83d\udca1 Why This Matters Now:\n27% of Americans already prefer AI chatbots over Google\nVCs are backing AEO startups (AI took 58% of global VC in Q1 2025)\nChatGPT is driving referral traffic via native search-like experiences\nNeil Patel calls AEO a subset of SEO \u2014 you\u2019re not starting from scratch\n\n\ud83d\udd2e My Take:\nWe\u2019re witnessing a generational shift in content strategy. SEO made content machine-readable. AEO makes content AI-conversational.\n\n\ud83d\udc49 Are you optimizing for answers, or still just keywords?\n\n#AI #AEO #SEO #ContentStrategy #LLM #ChatGPT #Gemini #DigitalMarketing #SearchEvolution #AnswerEconomy",
+                "link": "https://www.linkedin.com/feed/update/urn:li:activity:7328630852865720320",
+                "posted_date": "2025-06-04T06:56:46.317"
+            },
+            {
+                "post_text": "ZeroSearch by Alibaba: Key Points and Insights\n\nWhat is ZeroSearch?\n\nCore Concept: ZeroSearch is a new AI training method developed by Alibaba that trains large language models (LLMs) to perform search tasks using simulations instead of real-time queries to external search engines like Google. It transforms a reference model into a pseudo-search engine, enabling AI to generate search-like responses internally.\n\nCost Reduction: The note highlights a significant cost saving\u2014running 64,000 queries via a traditional API (e.g., Google\u2019s SerpAPI) costs $586, while ZeroSearch achieves the same for just $70, an 88% reduction.\n\nAccessibility: By slashing costs, ZeroSearch makes advanced AI training accessible to smaller teams and startups, reducing reliance on expensive infrastructure\n\nHow Does ZeroSearch Work?\n\nSimulation-Based Training: ZeroSearch uses a two-step process:\nSupervised Fine-Tuning (SFT): A reference LLM (e.g., 3B, 7B, or 14B parameters) is fine-tuned to act as a retrieval module, generating both relevant and \u201cnoisy\u201d (irrelevant) documents in response to queries. This mimics real search engine behavior without actual API calls.\n\nReinforcement Learning (RL) with Curriculum Rollout: The quality of simulated documents is gradually degraded during training to simulate challenging scenarios, helping the AI learn to handle ambiguity and improve reasoning over time.\n\nPerformance Metrics: A 7B-parameter model matches Google Search performance, while a 14B-parameter model surpasses it (e.g., scoring 33.97 vs. Google\u2019s 32.47 on benchmarks like Natural Questions and TriviaQA). This indicates ZeroSearch isn\u2019t just cost-effective but also competitive in quality.\n\nApplications and Impact :\n\nQuark App and Deep Search: ZeroSearch powers Alibaba\u2019s Quark app, noted as China\u2019s most popular AI tool in 2025. Quark\u2019s \u201cdeep search\u201d feature combines Alibaba\u2019s Qwen AI model (likely Qwen2.5 or Qwen3) with real-time results to provide context-aware answers, enhancing reasoning and generation capabilities.\n\nMarket Competition: The note mentions competitors like Baidu, DeepSeek, and Moonshot AI racing to upgrade their search AI with similar real-time tools, reflecting a broader trend in China\u2019s AI landscape to integrate advanced search capabilities\n\nBroader Implications: ZeroSearch signals a shift in AI development economics, reducing dependency on Big Tech platforms and potentially redefining search engines\u2019 role in AI training.\n\n#AIInnovation #ZeroSearchImpact #DeepSearchFuture #EthicalAI #AIForStartups",
+                "link": "https://www.linkedin.com/feed/update/urn:li:activity:7328256827425456128",
+                "posted_date": "2025-06-04T06:56:46.317"
+            },
+            {
+                "post_text": "A piece of News worth the Bookmark!\n\nReddit has uncovered an unauthorized AI experiment conducted by researchers from the University of Zurich on its r/changemyview subreddit. The researchers deployed AI-powered chatbots to engage in debates on sensitive topics, testing their ability to persuade human users.\n\nThe AI bots impersonated real users, including trauma survivors and counselors, to make their arguments more convincing.\nA separate AI system analyzed users' posting histories, extracting personal details like age, gender, and political views to craft targeted responses.\nThe experiment revealed that AI-generated comments were 6x more persuasive than human responses, raising concerns about AI\u2019s influence on online discourse.\n\nReddit\u2019s Chief Legal Officer condemned the study as \u201cdeeply wrong on both moral and legal levels\u201d and announced legal action against the researchers.\nThe University of Zurich has halted the publication of the research and launched an internal investigation.\n\nThis incident highlights the growing risks of AI manipulation in online spaces. The fact that these AI-generated comments went undetected and received major support suggests that coordinated AI campaigns could influence public opinion on a large scale\n\n\u00a0\u00a0#AIEthics \u00a0#AIManipulation \u00a0\u00a0#ResponsibleAI \u00a0\u00a0#AIInSociety \u00a0#DigitalTrust",
+                "link": "https://www.linkedin.com/feed/update/urn:li:activity:7323617307140726784",
+                "posted_date": "2025-05-04T06:56:46.318"
+            }
+        ]
+    },
+    "content_affinity": {
+        "talks_about": null
+    },
+    "persona": {
+        "true": {
+            "behavioural_factors": {},
+            "email_personalization": {
+                "advice": {
+                    "Subject": "To the point, measured",
+                    "Subject Length": "2-3 words",
+                    "Salutation": "No",
+                    "Greeting": "No",
+                    "Emojis/GIFs": "",
+                    "Bullet Points": "Could use",
+                    "Closing Line": "Clearly state your ask",
+                    "Closing Greeting": "Skip",
+                    "Complimentary Close": "None or standard",
+                    "Tone Of Words": "Confident, direct",
+                    "Overall Messaging": "Focused on measurable results",
+                    "Length Of Mail": "Very Short"
+                },
+                "examples": {
+                    "Subject": "Will this work?', '6.2% revenue impact' etc.",
+                    "Salutation": "Skip 'Hi', 'Hey' etc., use only the first name",
+                    "Greeting": "Skip usual lines like 'I hope you are doing well'",
+                    "Emojis/GIFs": "",
+                    "Bullet Points": "",
+                    "Closing Line": "Something like 'Can we get on a call tomorrow at 1100 hours and finalize this?'",
+                    "Complimentary Close": "Something simple like 'Thanks', 'Regards', or nothing at all.",
+                    "Tone Of Words": "",
+                    "Overall Messaging": "",
+                    "Length Of Mail": "Less than 100 words"
+                },
+                "definitions": {
+                    "Subject": "The subject of the email",
+                    "Subject Length": "The length of the subject",
+                    "Salutation": "The very start of a message that addresses the person",
+                    "Greeting": "The first line after the initial salutation",
+                    "Emojis/GIFs": "Any emojis/smileys/GIFs/images in your message",
+                    "Bullet Points": "Any bullet points in your message",
+                    "Closing Line": "The last full line of the mail",
+                    "Complimentary Close": "The part where you share a goodbye greeting before writing your name",
+                    "Tone Of Words": "The kind of important phrases and words in your message",
+                    "Overall Messaging": "The message that you want to convery to the reader",
+                    "Length Of Mail": "How long the email should be"
+                }
+            },
+            "cold_calling_advice": {
+                "insights": {
+                    "Pattern Interrupt": "Speaking in a slightly hesitant manner, and seeking their permission at the start through a negation can get you a chance.",
+                    "Pace": "Speak slightly fast, especially if you tend to be calm and confident. Sound like a \u2018knows their domain\u2019 person.",
+                    "Tone": "Keep your tone slightly apprehensive, as if you are a little unsure about calling them.",
+                    "Tactics To Win": "Use of negations, giving full information",
+                    "Mistakes To Avoid": "Use of superlatives, overusing social proof",
+                    "Making The Ask": "Use negations, it is extra effective with them. It gives them a chance to say no, they like doing that.",
+                    "Subconscious Driver": "They believe they know a lot, so it needs to make sense as well as make them curious. They need to think that it is something worth investigation."
+                },
+                "examples": {
+                    "Greeting": "Hi Momshad, this is Momshad at Unfaro.",
+                    "Opener": "You probably don\u2019t want to be on this cold call, would it be a problem if I asked for 30 seconds of your time?",
+                    "Introduction": "My company has leveraged  30+ years of research to build an AI that can predict anyone's personality, behavior and decision-making style before you even spend a minute with them.",
+                    "Ask": "Companies like [abc], [xyz] have been able to move [KPI1] by X% and [KPI2] by Y%.  Would it be too much to put 15 minutes on your calendar to share why this could be high ROI for you?",
+                    "Close": "Can I suggest [time1] on [date1]? Or would you prefer any other slots? \n\n And [prospect_email] would be the right email ID for you?"
+                }
+            },
+            "interests": [],
+            "conversation_starters": [],
+            "communication_advice": {
+                "adjectives": [
+                    "Fast Learner",
+                    "Sometimes Sarcastic",
+                    "Very Practical"
+                ],
+                "description": [
+                    "They are not easy to manage as team members and are equally hard taskmasters as leaders.",
+                    "They combine a strong bias for action with an analytical bent of mind.",
+                    "They are perfectionists with little tolerance for mistakes and are total go-getters."
+                ],
+                "what_to_say": [
+                    "Share factual information about the role and also highlight what impact it could create.",
+                    "Be to-the-point and very objective when you share details with them, they are not sold by stories like the S or I personality types.",
+                    "Tell them how the role would challenge them, and what monetary or growth benefits they can expect."
+                ],
+                "what_to_avoid": [
+                    "Don't try to use superlatives or flowery language, they will respond the best if they feel that they are getting the real information.",
+                    "Skip verbosity and small talk, they are highly likely to be put off by it.",
+                    "Do not make the role look easy or too repeatable. Unlike the S personality types, this repels them away."
+                ],
+                "_type": [
+                    "high calculativeness",
+                    "high dominance"
+                ]
+            }
+        },
+        "hiring": {
+            "behavioural_factors": {
+                "need_for_autonomy": {
+                    "score": 6.5,
+                    "level": "high",
+                    "order": 1
+                },
+                "general_behavior": {
+                    "score": 7,
+                    "level": "usually friendly",
+                    "order": 2
+                },
+                "attitude_and_outlook": {
+                    "score": 7,
+                    "level": "positive",
+                    "order": 3
+                },
+                "teamwork_skills": {
+                    "score": 6.5,
+                    "level": "very good",
+                    "order": 4
+                },
+                "stability_potential": {
+                    "score": 6.4,
+                    "level": "high",
+                    "order": 5
+                },
+                "action_orientedness": {
+                    "score": 6.3,
+                    "level": "high",
+                    "order": 6
+                },
+                "learning_ability": {
+                    "score": 5.3,
+                    "level": "medium",
+                    "order": 7
+                }
+            },
+            "email_personalization": {
+                "advice": {
+                    "Subject": "About challenge, growth",
+                    "Salutation": "No",
+                    "Greeting": "No",
+                    "Emojis/GIFs": "Avoid",
+                    "Bullet Points": "Could use",
+                    "Closing Line": "Offer full details, clearly state your ask",
+                    "Complimentary Close": "None or standard",
+                    "Tone Of Words": "Confident, direct",
+                    "Overall Messaging": "Focus on the goals, achievement. Skip compliments, stay to the point",
+                    "Length Of Mail": "Short"
+                },
+                "examples": {
+                    "Subject": "Something like 'Fast-growth PM role with a Cloud 100 startup', 'Are you a VP Marketing who can refresh the brand of a F2000 company?' etc.",
+                    "Salutation": "Skip 'Hi', 'Hey' etc., use only the first name",
+                    "Greeting": "Skip usual lines like 'I hope you are doing well'",
+                    "Emojis/GIFs": "",
+                    "Bullet Points": "",
+                    "Closing Line": "Something like 'Can we get on a call tomorrow at 1100 hours and I can make sure that you have full information to decide about this opportunity?'",
+                    "Complimentary Close": "Something simple like 'Thanks', 'Regards', or nothing at all.",
+                    "Tone Of Words": "",
+                    "Overall Messaging": "",
+                    "Length Of Mail": "Ideally less than 150 words"
+                },
+                "definitions": {
+                    "Subject": "The subject of the email",
+                    "Salutation": "The very start of a message that addresses the person",
+                    "Greeting": "The first line after the initial salutation",
+                    "Emojis/GIFs": "Any emojis/smileys/GIFs/images in your message",
+                    "Bullet Points": "Any bullet points in your message",
+                    "Closing Line": "The last full line of the mail",
+                    "Complimentary Close": "The part where you share a goodbye greeting before writing your name",
+                    "Tone Of Words": "The kind of important phrases and words in your message",
+                    "Overall Messaging": "The message that you want to convey to the reader",
+                    "Length Of Mail": "How long the email should be"
+                }
+            },
+            "cold_calling_advice": {},
+            "interests": [],
+            "conversation_starters": [],
+            "communication_advice": {
+                "adjectives": [
+                    "Fast Learner",
+                    "Sometimes Sarcastic",
+                    "Very Practical"
+                ],
+                "description": [
+                    "They are not easy to manage as team members and are equally hard taskmasters as leaders.",
+                    "They combine a strong bias for action with an analytical bent of mind.",
+                    "They are perfectionists with little tolerance for mistakes and are total go-getters."
+                ],
+                "what_to_say": [
+                    "Share factual information about the role and also highlight what impact it could create.",
+                    "Be to-the-point and very objective when you share details with them, they are not sold by stories like the S or I personality types.",
+                    "Tell them how the role would challenge them, and what monetary or growth benefits they can expect."
+                ],
+                "what_to_avoid": [
+                    "Don't try to use superlatives or flowery language, they will respond the best if they feel that they are getting the real information.",
+                    "Skip verbosity and small talk, they are highly likely to be put off by it.",
+                    "Do not make the role look easy or too repeatable. Unlike the S personality types, this repels them away."
+                ],
+                "_type": [
+                    "high calculativeness",
+                    "high dominance"
+                ],
+                "personalized_email": "Hi <candidate_name>, \n\nMy name is <your_name>, I've been given the mandate to find a consistent, methodical <role_name> for <company_name>, based out of <role_location>. From my analysis, I believe that this role should align with your expectations, are you open to a discussion about the same? \n\nThe main expectations from this role are: \n**b**<expectation_first> \n**b**<expectation_second> \n**b**<expectation_third> \n\n<role_extra_info> \n\nThe key benefits of this role for you would be threefold : chance to work with a methodical & data-driven team, an opportunity to have significant & visible impact and strong career alignment & growth prospects. \n\nAre you available so that I can give you a call to share the required details about the role? \n\nI appreciate your time. \n\n<your_name> ",
+                "personalized_email_subject": "<role_name> role that would enhance your career"
+            },
+            "profile_url": "https://humantic.ai/profile/Momshad-Khan-fcd3ee04/hiring"
+        },
+        "sales": {
+            "behavioural_factors": {},
+            "email_personalization": {
+                "advice": {
+                    "Subject": "To the point, measured",
+                    "Subject Length": "2-3 words",
+                    "Salutation": "No",
+                    "Greeting": "No",
+                    "Emojis/GIFs": "",
+                    "Bullet Points": "Could use",
+                    "Closing Line": "Clearly state your ask",
+                    "Closing Greeting": "Skip",
+                    "Complimentary Close": "None or standard",
+                    "Tone Of Words": "Confident, direct",
+                    "Overall Messaging": "Focused on measurable results",
+                    "Length Of Mail": "Very Short"
+                },
+                "examples": {
+                    "Subject": "Will this work?', '6.2% revenue impact' etc.",
+                    "Salutation": "Skip 'Hi', 'Hey' etc., use only the first name",
+                    "Greeting": "Skip usual lines like 'I hope you are doing well'",
+                    "Emojis/GIFs": "",
+                    "Bullet Points": "",
+                    "Closing Line": "Something like 'Can we get on a call tomorrow at 1100 hours and finalize this?'",
+                    "Complimentary Close": "Something simple like 'Thanks', 'Regards', or nothing at all.",
+                    "Tone Of Words": "",
+                    "Overall Messaging": "",
+                    "Length Of Mail": "Less than 100 words"
+                },
+                "definitions": {
+                    "Subject": "The subject of the email",
+                    "Subject Length": "The length of the subject",
+                    "Salutation": "The very start of a message that addresses the person",
+                    "Greeting": "The first line after the initial salutation",
+                    "Emojis/GIFs": "Any emojis/smileys/GIFs/images in your message",
+                    "Bullet Points": "Any bullet points in your message",
+                    "Closing Line": "The last full line of the mail",
+                    "Complimentary Close": "The part where you share a goodbye greeting before writing your name",
+                    "Tone Of Words": "The kind of important phrases and words in your message",
+                    "Overall Messaging": "The message that you want to convery to the reader",
+                    "Length Of Mail": "How long the email should be"
+                }
+            },
+            "cold_calling_advice": {
+                "insights": {
+                    "Pattern Interrupt": "Speaking in a slightly hesitant manner, and seeking their permission at the start through a negation can get you a chance.",
+                    "Pace": "Speak slightly fast, especially if you tend to be calm and confident. Sound like a \u2018knows their domain\u2019 person.",
+                    "Tone": "Keep your tone slightly apprehensive, as if you are a little unsure about calling them.",
+                    "Tactics To Win": "Use of negations, giving full information",
+                    "Mistakes To Avoid": "Use of superlatives, overusing social proof",
+                    "Making The Ask": "Use negations, it is extra effective with them. It gives them a chance to say no, they like doing that.",
+                    "Subconscious Driver": "They believe they know a lot, so it needs to make sense as well as make them curious. They need to think that it is something worth investigation."
+                },
+                "examples": {
+                    "Greeting": "Hi Momshad, this is Momshad at Unfaro.",
+                    "Opener": "You probably don\u2019t want to be on this cold call, would it be a problem if I asked for 30 seconds of your time?",
+                    "Introduction": "My company has leveraged  30+ years of research to build an AI that can predict anyone's personality, behavior and decision-making style before you even spend a minute with them.",
+                    "Ask": "Companies like [abc], [xyz] have been able to move [KPI1] by X% and [KPI2] by Y%.  Would it be too much to put 15 minutes on your calendar to share why this could be high ROI for you?",
+                    "Close": "Can I suggest [time1] on [date1]? Or would you prefer any other slots? \n\n And [prospect_email] would be the right email ID for you?"
+                }
+            },
+            "interests": [],
+            "conversation_starters": [],
+            "communication_advice": {
+                "adjectives": [
+                    "Precise But Practical",
+                    "Rigorous & Demanding",
+                    "Fast But Analytical"
+                ],
+                "key_traits": {
+                    "Risk Appetite": "The risks don\u2019t matter much to them.",
+                    "Ability To Say No": "If they are not convinced, they will say no without any hesitation.",
+                    "Speed": "They can take decisions very fast if you manage to convince them.",
+                    "Decision Drivers": "Conviction around the impact matters the most to them, followed by a sense of achievement and ROI."
+                },
+                "description": [
+                    "They respond better to strong and respectful interactions.",
+                    "They are not focused on building rapport and relationships.",
+                    "They are very proud of what they do."
+                ],
+                "what_to_say": [
+                    "Be respectful but crisp",
+                    "Speak about competitive differentiation that your product offers",
+                    "Use phrases like \u2018it\u2019s your decision\u2019, \u2018strategic impact\u2019 etc."
+                ],
+                "what_to_avoid": [
+                    "Do not hesitate from asking counter questions, just avoid challenging their authority",
+                    "Don\u2019t be in a rush to invite them for a social meet and greet",
+                    "Don\u2019t focus on process and rules, give the impression of being a \u2018gets it done\u2019 person"
+                ],
+                "_type": [
+                    "high calculativeness",
+                    "high dominance"
+                ]
+            },
+            "profile_url": "https://humantic.ai/profile/Momshad-Khan-fcd3ee04/sales"
+        }
+    },
+    "mood": {},
+    "personality_analysis": {
+        "ocean_assessment": {
+            "agreeableness": {
+                "score": 5.91,
+                "level": "Somewhat Agreeable"
+            },
+            "conscientiousness": {
+                "score": 6.49,
+                "level": "Conscientious"
+            },
+            "emotional_stability": {
+                "score": 6.05,
+                "level": "Somewhat Balanced"
+            },
+            "extraversion": {
+                "score": 7.03,
+                "level": "Extroverted"
+            },
+            "openness": {
+                "score": 6.47,
+                "level": "Somewhat Open"
+            }
+        },
+        "disc_assessment": {
+            "calculativeness": {
+                "score": 8.2,
+                "level": "high"
+            },
+            "dominance": {
+                "score": 7.9,
+                "level": "high"
+            },
+            "influence": {
+                "score": 3.9,
+                "level": "very low"
+            },
+            "steadiness": {
+                "score": 6,
+                "level": "medium"
+            }
+        },
+        "summary": {
+            "disc": {
+                "label": [
+                    "C",
+                    "D"
+                ],
+                "description": [
+                    "High Calculativeness",
+                    "High Dominance"
+                ],
+                "color": "red",
+                "group": "dominant",
+                "archetype": "Sharpshooter"
+            },
+            "ocean": {
+                "label": [
+                    "e",
+                    "c",
+                    "o"
+                ],
+                "description": [
+                    "Extroverted",
+                    "Conscientious",
+                    "Somewhat Open"
+                ]
+            }
+        }
+    },
+    "skills": [
+        "Team Management",
+        "Saas",
+        "Strategy"
+    ],
+    "followers": 4528,
+    "prographics": {
+        "job_level": null,
+        "education_level": "Bachelors",
+        "experience_in_years": null,
+        "designation": null,
+        "social_activity_status": "inactive"
+    },
+    "external_signals": {
+        "overview": "Momshad is a Director of Engineering at Code and Theory, specializing in technology strategy for fintech, healthcare, and retail. With a background that includes a B. E. from Magadh University and experience as a CTO, he has a strong foundation in AI/ML and product engineering. Colleagues describe him as a supportive and technical leader. \n\nHe has a keen interest in the evolution of AI, frequently writing and posting about generative AI, AI agents, and the future of online search. Momshad's focus extends to technology leadership and building products that solve real-world problems, demonstrating a passion for innovation at the intersection of technology and business. \n\nHe was involved in creating \"WhatTheFont, \" an application described as a \"Shazam for fonts\" that uses AI to identify typography from a photo. ",
+        "topics_they_care_about": [
+            {
+                "label": "AI Search Evolution",
+                "description": "His recent social media activity focuses heavily on Answer Engine Optimization (AEO) and new AI training methods like ZeroSearch, indicating a deep interest in the future of search. "
+            },
+            {
+                "label": "Generative AI",
+                "description": "Writes articles and posts about AI's impact on software development, the role of AI agents, and how large language models are changing the tech landscape. "
+            },
+            {
+                "label": "Technology Leadership",
+                "description": "His career progression to Director and recommendations highlighting him as a \"technical leader\" show a focus on engineering management, team leadership, and technology strategy. "
+            },
+            {
+                "label": "AI Product Development",
+                "description": "His publication on \"WhatTheFont\" and skills in AI/ML and product engineering demonstrate a passion for creating practical AI-driven products. "
+            },
+            {
+                "label": "Agile Methodologies",
+                "description": "Holds certifications as a Certified Scrum Product Owner (CSPO) and Certified ScrumMaster (CSM), showing a commitment to agile and lean principles in development. "
+            },
+            {
+                "label": "Startup Innovation",
+                "description": "His experience as a Co-Founder and CTO of CDC Labs, combined with skills in product ideation and lean startup methodologies, points to an entrepreneurial mindset. "
+            }
+        ],
+        "media_appearances": []
+    }
+}

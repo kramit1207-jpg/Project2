@@ -9,15 +9,13 @@ const API_BASE_URL = 'http://localhost:8000'
 
 function App() {
   const [isLoading, setIsLoading] = useState(false)
-  const [analysis, setAnalysis] = useState(null)
-  const [rawScores, setRawScores] = useState(null)
+  const [profileData, setProfileData] = useState(null)
   const [error, setError] = useState(null)
 
   const handleSearch = async (linkedinUrl) => {
     setIsLoading(true)
     setError(null)
-    setAnalysis(null)
-    setRawScores(null)
+    setProfileData(null)
 
     try {
       const response = await axios.post(
@@ -32,8 +30,8 @@ function App() {
       )
 
       if (response.data) {
-        setAnalysis(response.data.analysis)
-        setRawScores(response.data.raw_scores)
+        // Store the entire API response
+        setProfileData(response.data)
       }
     } catch (err) {
       let errorMessage = 'An error occurred while analyzing the profile.'
@@ -103,12 +101,12 @@ function App() {
         {isLoading && <LoadingState />}
 
         {/* Dashboard */}
-        {!isLoading && analysis && rawScores && (
-          <Dashboard analysis={analysis} rawScores={rawScores} />
+        {!isLoading && profileData && (
+          <Dashboard profileData={profileData} />
         )}
 
         {/* Empty State */}
-        {!isLoading && !analysis && !error && (
+        {!isLoading && !profileData && !error && (
           <div className="text-center py-16">
             <div className="max-w-md mx-auto">
               <h2 className="text-2xl font-bold text-gray-800 mb-3">
